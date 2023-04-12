@@ -14,7 +14,6 @@
 ### Faces
 - Face detection
 - Face Recognition
-- Deep computer model: classificar personagens (escolher série)
 
 # What is OpenCV
 OpenCV-Python é uma biblioteca de Python projetada para resolver problemas de visão computacional.
