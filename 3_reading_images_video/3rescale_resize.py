@@ -22,14 +22,15 @@ def resize_frame(width: int,
     cap.set(3, width)
     cap.set(4, height)
 # é possível aplicar o processo em imagens e vídeos
-# IMAGEM
+
+# IMAGEM =====================================
 # img = cv2.imread('assets/fotos/cat.jpg')
 
 # resized_image = rescale_frame(img, 0.2)
 # cv2.imshow('resized_cat', resized_image)
 # cv2.waitKey(0)
 
-
+# VIDEO ======================================
 # Ler vídeos é um pouquinho diferente de ler imagens, pois temos que ler frame a frame de um vídeo
 # Pra isso criamos um loop que opera sobre a função .read() do objeto cap (que é o VideoCapture)
 while True:
@@ -40,13 +41,7 @@ while True:
 
     # cv2.imshow('video do dog', frame)
     cv2.imshow('video do dog', frame_resize)
-
-    # Não é necessário focar nessa explicação MAS:
-    # cv2.waitKey() retorna um 32 Bit integer (pode depender da plataforma). 
-    # O key input (input do teclado) é um ASCII de 8 Bit integer value. Então tu só precisa se preocupar com esses 8, os outros podem ser zero. 
-    # 0xFF é uma máscara pros 8bits finais
-    # é uma bitwise operation
-    # É possível alcançar isso com:
+    
     if cv2.waitKey(20) & 0xFF==ord('q'):
         break
 

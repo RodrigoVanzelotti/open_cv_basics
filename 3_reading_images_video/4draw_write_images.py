@@ -27,7 +27,7 @@ cat_img = cv2.imread('assets/fotos/cat.jpg')
 # 2. Desenhar um retângulo ==============================
 # cv2.rectangle(imagem, ponto1, ponto2, cor, thickness)
 # Se thickness = -1 ou cv2.FILLED, pintamos todo o retangulo (grossura)
-# cv2.rectangle(blank_img, (0,0), (250, 250),   verde, -1)
+# cv2.rectangle(blank_img, (0,0), (250, 250), verde, -1)
 
 # é possível trabalhar sobre os pontos da imagem, ao invés de dar coordenadas exatas
 # // = Floor division

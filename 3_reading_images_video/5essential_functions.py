@@ -71,7 +71,6 @@ corte = img[50:200, 200:400]
 # 8. Lembrando que é possível cortar a imagem direito no imshow()
 # cv2.imshow('corte direto', img[50:200, 200:400])
 
-
 # Dispondo a imagem
 # cv2.imshow('gatito', img)
 

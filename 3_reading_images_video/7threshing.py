@@ -1,5 +1,3 @@
-import cv2
-
 '''
 Nessa aula falaremos de Thresholding (o que pode parecer muito complexo):
 No processamento digital de imagens, Thresholding é o método mais simples de segmentação de imagens. 
@@ -10,6 +8,7 @@ Existem algumas condições para que a separação via Threshing funcione melhor
 - Luz homogênea
 - etc
 '''
+import cv2
 
 img = cv2.imread('assets/fotos/cats.jpg')
 # cv2.imshow('Gatitos normais', img)
@@ -21,12 +20,14 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 Para os threshs simples usaremos a função cv2.threshold(), todos derivados da imagem em cinza
 threshold(src, thresh, maxval, type[, dst])
 threshold(imagem, valor_de_thresh, max_val, metodo_de_thresholding)
+
 metodo_de_thresholding -> 
-cv.THRESH_BINARY
-cv.THRESH_BINARY_INV
+cv.THRESH_BINARY: focaremos nesses dois
+cv.THRESH_BINARY_INV: focaremos nesses dois
 cv.THRESH_TRUNC
 cv.THRESH_TOZERO
 cv.THRESH_TOZERO_INV
+Há uma imagem em assets/didaticas que demonstra os outros métodos possíveis de Thresh
 
 O método retorna duas saídas. A primeira é o valor de Threshing que foi usado e a segunda saída é a imagem com limite.
 '''
