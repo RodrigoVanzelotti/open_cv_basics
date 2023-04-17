@@ -44,10 +44,10 @@ Há um exemplo nos assets/didaticas que mostra duas imagens, na primeira precisa
 '''
 
 contours, hierarchies = cv2.findContours(canny, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
-contours, hierarchies = cv2.findContours(canny, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
+# contours, hierarchies = cv2.findContours(canny, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
 print(f'{len(contours)} contornos encontrados!!')
 
 cv2.drawContours(blank, contours, -1, (0,0,255), 1)
-cv2.imshow('Contours Drawn', blank)
+cv2.imshow('contornos desenhados', blank)
 
 cv2.waitKey(0)
