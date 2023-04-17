@@ -34,7 +34,7 @@ def translate(img, x, y):
     translation_matrix = np.float32([[1,0,x],[0,1,y]])
     # coletamos então as dimensões da nossa imagem e as inserimos em uma tupla
     dimensions = (img.shape[1], img.shape[0])
-    # e retornamos a função warpAffine, que retorna nosso resultado transladado
+    # e retornamos a função warpAffine, transformação afim, que retorna nosso resultado transladado
     return cv2.warpAffine(img, translation_matrix, dimensions)
 
 # img_tr = translate(img, 100, 250)
