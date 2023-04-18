@@ -1,9 +1,6 @@
 import cv2
 import numpy as np
 
-# NOTE REFAZER ESSE DOCUMENTO A PARTIR DE:
-# https://www.youtube.com/watch?v=lxNnlXLQuf0&ab_channel=Aryanverma
-
 # criando um canva em completamente preto (0)
 blank = np.zeros([400,400], dtype='uint8')
 # cv2.imshow('Retangulo', blank)
