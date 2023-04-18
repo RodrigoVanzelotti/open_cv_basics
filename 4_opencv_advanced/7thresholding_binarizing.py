@@ -56,6 +56,7 @@ cv.ADAPTIVE_THRESH_GAUSSIAN_C: O valor limite é uma soma ponderada gaussiana do
 
 # Thresholding Adaptativo
 adaptive_thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 9)
+# adaptive_thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 11, 9)
 # cv2.imshow('Thresholding Adaptativo', adaptive_thresh)
 
 cv2.waitKey(0)
