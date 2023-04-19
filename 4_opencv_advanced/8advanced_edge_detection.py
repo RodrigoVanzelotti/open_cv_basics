@@ -42,7 +42,6 @@ y = cv2.Sobel(cinza, cv2.CV_64F, 0, 1)
 cv2.imshow('Sobel X', x)
 cv2.imshow('Sobel Y', y)
 
-
 # combinamos o nosso x e y utilizando uma bitwise operation
 combined_sobel = cv2.bitwise_or(x, y)
 cv2.imshow('Sobel Combinando x+y', combined_sobel)
