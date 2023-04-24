@@ -43,8 +43,8 @@ cascade_class = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_front
 
 # é uma instancia da classe CascadeClassifier, para identificar o rosto na imagem e retornar o retangulo que envolve o rosto
 retangulos = cascade_class.detectMultiScale(cinza, scaleFactor=1.1, minNeighbors=12)
-# scaleFactor -> Parâmetro que especifica o quanto o tamanho da imagem é reduzido em cada escala de imagem.
-# minNeighbors -> Parâmetro que especifica quantos vizinhos cada retângulo candidato deve ter para retê-lo.
+# scaleFactor -> Parâmetro que especifica o quanto o tamanho da imagem é reduzido em cada escala de imagem. Por padrão = 1.1
+# minNeighbors -> Parâmetro que especifica quantos vizinhos cada retângulo candidato deve ter para retê-lo. Por padrão = 3
 
 print(f'Contagem de rostos: {len(retangulos)}')   # representa a quantidade de rostos que foram encontrados a partir da quantidade de retangulos
 print(retangulos) # o que essa variável representa?
