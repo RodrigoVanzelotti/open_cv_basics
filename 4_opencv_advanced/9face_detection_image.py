@@ -75,4 +75,9 @@ Tem um setup rápido e uma precisão relativamente boa, mas é muito sensível a
 projetos profissionais de visão computacional.
 '''
 
+'''
+Sugerir que os alunos tentem implementar essa funcionalidade nos projetos de vídeo lidos diretamente da webcam
+Dar a brecha no final da aula para que seja implementado por eles. Na aula seguinte tem a solução
+'''
+
 cv2.waitKey(0)
