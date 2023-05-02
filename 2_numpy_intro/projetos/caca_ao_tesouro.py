@@ -3,7 +3,7 @@ import numpy as np
 # Cria um mapa de 5 x 5 com números aleatórios de 1 a 9
 mapa = np.random.randint(1, 10, size=(5, 5))
 
-# Esconde o tesouro em uma célula aleatória do mapa
+# Esconde o tesouro em uma célula aleatória do mapa, verificando que não seja a celula onde o jogador nasce
 while True:
     tesouro_linha, tesouro_coluna = np.random.randint(0, 5, size=2)
     if (tesouro_linha, tesouro_coluna) != (0, 0):
